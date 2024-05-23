@@ -61,7 +61,6 @@ class UserRepository {
 
     final url =
         '$_basePath/$urlIDs?page=$pageNumber&pagesize=$pageSize&site=stackoverflow';
-    print(url);
 
     final response = await _httpClient.get<Map<String, dynamic>>(url);
 
